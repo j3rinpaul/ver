@@ -8,7 +8,7 @@ async def root():
 
 
 @app.get('/sim_test')
-def sim_test(id:int|None = None):
+def sim_test(id:str|None = None):
     if id:
         return {id}
     else:
